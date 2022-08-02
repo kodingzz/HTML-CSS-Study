@@ -8,6 +8,7 @@
 - 브라우저에게 웹사이트가 어떻게 보여줘야 하는지 알려줌  ex)제목의 색깔
 - CSS는 혼자 사용할 수 없음.
 - 웹사이트의 근육역할을 한다.
+
 ## JS(javaScript)
 - 웹사이트의 뇌역할을 하여 동작을 담당한다.
 - interactivity
@@ -16,6 +17,7 @@
 ## HTML 파일
 - 파일,폴더명은 소문자여야한다.
 - Vs code를 사용해 변경사항이 생길때마다 바로바로 저장해야한다. 저장방법은 window: ctrl+s
+
 ## HTML TAG
 - tag 기본구조: //<h1> ~</h1>
 - tag는 한번 열면 반드시 닫아야한다. 
@@ -24,10 +26,12 @@
 - ul: unordered list (순서 없는 리스트)
 - ol: ordered list(순서 있는 리스트)
 - li: list item(항목들)
+- src: 이미지 tag
+- a(anchor): 링크 tag 
+
 ## tag attributes(태그에 추가하는 속성)
-- a: anchor(닻) / 링크 tag 
-- a tag의 attributes : href , target
+### a tag의 attributes : href , target
 - href="링크주소", target : _self 는 현재 탭에서 url 이동, _blank는 다른 탭을 열어서 화면을 띄움
 - ex) <a href="http://google.com" target="_blank">Go to google.com</a>
-- img(이미지)는 self-closing tag라서 닫는 태그('/')가 없음. 
-- src : 주소나 파일 경로를 넣으면 해당 이미지가 나타남.
+### img(이미지)는 self-closing tag라서 닫는 태그('/')가 없음. 
+- src : 주소나 파일 경로를 넣으면 해당 이미지가 나타남. / 이미지 tag
