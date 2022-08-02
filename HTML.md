@@ -19,9 +19,9 @@
 - Vs code를 사용해 변경사항이 생길때마다 바로바로 저장해야한다. 저장방법은 window: ctrl+s
 
 ## HTML TAG
-- tag 기본구조: //<h1> ~</h1>
+- tag의 기본구조: ex)<food>김치</foord>
 - tag는 한번 열면 반드시 닫아야한다. 
-- 브라우저는 tag를 이해한다.
+- 브라우저는 tag로 이해한다.
 - h1~h6: title을 표시. 점점 글자크기가 작아진다.
 - ul: unordered list (순서 없는 리스트)
 - ol: ordered list(순서 있는 리스트)
