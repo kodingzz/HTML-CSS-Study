@@ -16,3 +16,16 @@
 ## HTML 파일
 - 파일,폴더명은 소문자여야한다.
 - Vs code를 사용해 변경사항이 생길때마다 바로바로 저장해야한다. 저장방법은 window: ctrl+s
+## HTML TAG
+- tag 기본구조: <h1> name </h1>
+- tag는 한번 열면 반드시 닫아야한다. 
+- 브라우저는 tag를 이해한다.
+- h1~h6: title을 표시. 점점 글자크기가 작아진다.
+- ul: unordered list (순서 없는 리스트)
+- ol: ordered list(순서 있는 리스트)
+- li: list item(항목들)
+## tag attributes(태그에 추가하는 속성)
+- a: anchor(닻) / 링크 tag 
+- a tag의 attributes : href , target
+- href="링크주소", target : _self 는 현재 탭에서 url 이동, _blank는 다른 탭을 열어서 화면을 띄움
+- ex) <a href="http://google.com" target="_blank">Go to google.com</a>
