@@ -31,7 +31,8 @@
 
 ## tag attributes(태그에 추가하는 속성)
 ### a tag의 attributes : href , target
-- href="링크주소", target : _self 는 현재 탭에서 url 이동, _blank는 다른 탭을 열어서 화면을 띄움
+- href="링크주소"
+- target : _self 는 현재 탭에서 url 이동, _blank는 다른 탭을 열어서 화면을 띄움
 - ex) <a href="http://google.com" target="_blank">Go to google.com</a>
 ### img(이미지)는 self-closing tag라서 닫는 태그('/')가 없음. 
 - src : 주소나 파일 경로를 넣으면 해당 이미지가 나타남. / 이미지 tag
