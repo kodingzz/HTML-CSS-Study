@@ -28,4 +28,4 @@
 - a: anchor(닻) / 링크 tag 
 - a tag의 attributes : href , target
 - href="링크주소", target : _self 는 현재 탭에서 url 이동, _blank는 다른 탭을 열어서 화면을 띄움
-- ex) <a href="http://google.com" target="_blank">Go to google.com</a>
+- ex)<a href="http://google.com" target="_blank">Go to google.com</a>
