@@ -54,7 +54,7 @@
 ## More Tags  
 ### 다양한 태그 이용(다 못외운다..)
 - p : 단락 구분
-- abbr : 툴팁같이 나타남  ex) <p>My name is <abbr title="KIM HYUN WOO">KHW</abbr></p>
+- abbr : 툴팁같이 나타남  ex) <!--<p>My name is <abbr title="KIM HYUN WOO">KHW</abbr></p> -->
 - audio: 오디오 파일 실행해주는 태그  / 속성: controls, autoplay, src="소리 링크"  
 
 ## Form Tags
