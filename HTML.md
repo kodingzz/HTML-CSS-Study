@@ -66,3 +66,15 @@
 - 속성: for="~"
 - lable의 for 속성과 input의 id를 같게 하면 label을 누르면 id로 연결된 input에 반응한다.
 - id는 유니크 해야하고, 한 태그당 하나의 id
+
+## Semantic HTML
+- sementic = 문서를 보기만 해도 의미를 짐작할 수 있는 것
+- 시멘틱 태그를 사용하는이유: 사용자가 코드를 볼때 이해를 돕기위해 사용
+- 시멘틱 태그 종류: header, main, footer, address...
+- div(division): 분할 / 태그가 일자로 이루어져있을때 일렬로 분할하는 태그  
+
+## Recap(중요한부분 정리) 
+- 태그에 속성이 붙으면 강력해진다.
+- attribute값을 사용할때는 항상 " "를 사용해야한다.
+- 모든 태그는 id를 가질수있다.
+- 일부 속성은 일부 태그만 사용 가능하다. ex) type은 form의 input만 사용가능  
