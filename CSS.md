@@ -52,7 +52,7 @@ selector {
 - 상하를 적용하기 위해서는 inline을 block으로 변경해야한다.
 ### class
 -id와 다르게 여러 요소들에서 사용할 수 있다.
--css에 표기법 -> .class명 {} // ex) .tomato {}
+- css에 표기법 -> .class명 {} // ex) .tomato {}
 - 한번에 여러클래스가 쓰일 수 있다. ex) class="tomato, apple, grape.."( id는 불가능)
 
 // 여러코드 한번에 수정하는법: 원하는곳 클릭후 ctrl+d(윈도우)
