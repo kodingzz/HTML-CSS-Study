@@ -134,11 +134,10 @@ cf) '>'는 자식을 찾는 기호이고 , '+'는 형제를 찾는 기호이다.
 ### css에서 알아야할 컬러 시스템
 1. 16진수 컬러 ex) #FFCCE00
 2. rgb ex) rgb(252,206,0) // cf) rgba : 투명도 rgba(252,206,0,0.4)
-3.
 - :root{--main-color :색깔}
 - root은 기본적으로 모든 document의 뿌리.  여기에 변수이름을 쓰고 --main-color라고 변수이름을 주고 이것을 document의 root에 저장하는것이다.
 - 변수를 사용할때는 var(--main-color)
-4. border색을 root에 저장하는것도 마찬가지
+3. border색을 root에 저장하는것도 마찬가지
 - ex) :root{--default-border: 1px solid var(--main-color);}
 
 ## Transitions
