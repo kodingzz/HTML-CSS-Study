@@ -89,4 +89,115 @@ selector {
 - top,left,right,bottom 변경 시 인접한 요소 위치에 영향받지 않는다.
 - 서로 다른 레이어에 존재하기 때문이다.
 
+## Relative Absolute 
+### position
+1. static
+- 박스를 처음위치하는곳에 두는것이다.
+2. relative
+- top, left, right, bottom을 이용하여 요소가 처음위치한 곳에서 위치 변경한다.
+3. absolute
+- 가장 가까운 relative 부모를 기준으로 이동한다. // relative를 설정한 부모가 없다면 body가 부모가 되어 기준이된다.
 
+## Pseudo Selectors part One
+1. last-child{} // 마지막 자신 선택
+2. first-child{} // 첫번째 자식 선택
+3.nth-child(숫자) {} // 원하는 순서의 자식 선택
+4.nth-child(even,odd) {} // 짝수or홀수 자식 선택
+5.nth-child(2n+1)
+- 선택자의 2n+1 요소 선택
+- n은 0부터 대입하는 것으로 추측
+
+## Combinators
+1. p span {} // p안의 span을 찾는다.
+2. div > span {} // div안의 바로 밑 span을 찾는다.
+3. p+ span {} // p다음에 오는 span을 찾는다.
+cf) '>'는 자식을 찾는 기호이고 , '+'는 형제를 찾는 기호이다.
+
+## Pseudo Selectors part Two
+1. p ~ span {} // span이 p의 형제이고 span 바로 뒤에 오지 않을때 적용
+2.input:required {} // input 속성이 required인 경우 적용
+3.input[placeholder~="name"] {} //input 속성 placecholder가 name을 포함하는 경우 적용
++) a[href$=".org"] {} // href가 org로 끝날때 적용
++)class를 추가할 필요가 없다.
+
+ ## States
+1. active // 버튼을 누르고 있으면 적용
+2. hover // 버튼에 마우스를 대고있으면 적용
+3. focus // 키보드로 선택되었을때 적용
+4.visited // 링크에만 적용되며 링크를 클릭하면 방문했다고 표시
+5.focus-within// focused인 자식을 가진 부모 엘리먼트에 적용  ex) input이 focused되면 부모인 form이 적용
+## Recap
+- input::placeholder {} // placeholder를 스타일링한다.
+- p:: selection{}  //p안의 내용을 선택할때 스타일링한다.
+
+## Colors and Variables 
+### css에서 알아야할 컬러 시스템
+1. 16진수 컬러 ex) #FFCCE00
+2. rgb ex) rgb(252,206,0) // cf) rgba : 투명도 rgba(252,206,0,0.4)
+3.
+- :root{--main-color :색깔}
+- root은 기본적으로 모든 document의 뿌리.  여기에 변수이름을 쓰고 --main-color라고 변수이름을 주고 이것을 document의 root에 저장하는것이다.
+- 변수를 사용할때는 var(--main-color)
+4. border색을 root에 저장하는것도 마찬가지
+- ex) :root{--default-border: 1px solid var(--main-color);}
+
+## Transitions
+- 어떤상태에서 다른상태로 변화하는것을 애니메이션화한것
+- state(ex.hover)가 없는 곳에 transition적용해야한다.
+- 형태 // transition : background-color 10s ease-in-out;  -> 10초동안 ease-in-out형태로 변경된다.
+- transition : all 5s ease-in-out; // 모든 속성을 5초동안 변경
+
+## Transitions part Two 
+### ease-in-function
+- 브라우저에게 애니메이션이 어떻게 변화하는지를 알려준다.
+1) linear: 요소를 직선으로 움직이게 만들어줌. 같은 속도로 움직임.
+2) ease-in: 처음에 좀 더 빨라지면서 움직임.
+3) ease-out: 끝에서 느려짐.
+4) ease-in-out: 처음에 느렸다가 중간에 가속했다가 끝에 느려지면서 끝남.
+5)cubic-bazier : 사용자가 직접 애니메이션을 만들어 적용
+
+## Transformations
+1. rotate (x ,y,z축 회전), rotate3D
+2.scale(X,Y,Z축으로 늘리거나 줄이기)
+3. translate 사진 위치 변화
+4. transition은 root에 있어야한다. state에 있으면 안된다.
+5. color나 border-radius처럼 변화시킬 내용을 state에 적는다.
+이외에도 skew, matrix..
+cf) transform mdn 검색
+
+## Animations part One
+마우스의 움직임이나 transition없이 애니메이션이 일어나는 방법
+ex)
+@keyframes coinflip {
+from {
+transform: rotateX(0);
+}
+to {
+transform: rotateX(360deg);
+}
+}
+형태로 하나의 animation을 만든다.
+- 하나의 transform에 다양한 기능들을 넣을 수 있다. // roatate,translate,scale...
+
+## Animations part Two
+@keyframes coinflip {
+0% {
+transform: rotateX(0);
+}
+50% {
+transform: rotateX(360deg) translateX(1000px);
+}
+100% {
+transform: rotateX(0);
+}
+}
+-> 0~360도 회전하고 1000px만큼 우측으로 이동하는 애니메이션이 끝나도 툭툭끊기지않고 처음 위치로 자연스럽게 돌아간다.
+
+cf) CSS animations 검색
+
+##  Media Queries
+- media query : 반응형 웹사이트 만들 때 사용
+- 조건을 추가할수있는 방법(코드의 조건)
+- and를 써서 연결한다.
+- media query안에 원하는 css를 넣는다. 
+- @media print // 스크린을 프린트할때 사용
