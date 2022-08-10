@@ -99,7 +99,7 @@ selector {
 - 가장 가까운 relative 부모를 기준으로 이동한다. // relative를 설정한 부모가 없다면 body가 부모가 되어 기준이된다.
 
 ## Pseudo Selectors part One
-1. last-child{} // 마지막 자신 선택
+1. last-child{} // 마지막 자식 선택
 2. first-child{} // 첫번째 자식 선택
 3.nth-child(숫자) {} // 원하는 순서의 자식 선택
 4.nth-child(even,odd) {} // 짝수or홀수 자식 선택
