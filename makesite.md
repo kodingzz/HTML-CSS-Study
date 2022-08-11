@@ -16,8 +16,7 @@ BEM(block element modifier)
 ## Sign Up Screen part Three
 1.reset CSS 활용
 - 모든 CSS 요소를 초기화함.
-2. text-align : center..
-- h1, p같은 text를 옮길때 사용
+2. text-align : center..  // h1, p같은 text를 옮길때 사용
 cf) opacity: 투명도
 
 ## Log In Form
