@@ -96,7 +96,7 @@ selector {
 2. relative
 - top, left, right, bottom을 이용하여 요소가 처음위치한 곳에서 위치 변경한다.
 3. absolute
-- 가장 가까운 relative 부모를 기준으로 이동한다. // relative를 설정한 부모가 없다면 body가 부모가 되어 기준이된다.
+- 가장 가까운 relative를 가진 부모를 기준으로 이동한다. // relative를 설정한 부모가 없다면 body가 부모가 되어 기준이된다.
 
 ## Pseudo Selectors part One
 1. last-child{} // 마지막 자식 선택
